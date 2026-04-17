@@ -1,6 +1,5 @@
 import streamlit as st
 import PyPDF2
-import spacy
 import pandas as pd
 import re
 
@@ -69,8 +68,6 @@ st.info("""
 - Paste a job description
 - Get match score, missing skills, and suggestions
 """)
-
-nlp = spacy.load("en_core_web_sm")
 
 SKILL_KEYWORDS = [
     "python", "java", "javascript", "html", "css", "sql", "react", "node.js",
